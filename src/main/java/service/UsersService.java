@@ -20,4 +20,9 @@ public class UsersService {
         UsersRepository usersRepository = new UsersRepository();
         return usersRepository.getUsers();
     }
+
+    public void resetUsers() {
+        UsersRepository usersRepository = new UsersRepository();
+        usersRepository.resetUsers();
+    }
 }
