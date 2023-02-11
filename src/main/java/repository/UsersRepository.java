@@ -24,6 +24,10 @@ public class UsersRepository {
         }
     }
 
+    public List<Users> getUsers() {
+        return users;
+    }
+
     private void sortUsersByPoint() {
         Collections.sort(users, new Comparator<Users>() {
             @Override

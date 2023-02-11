@@ -11,6 +11,20 @@
     <title>GAME DOAN SO - Charts</title>
 </head>
 <body>
-
+    <div>
+        <p2>Bảng Xếp Hạng</p2>
+        <%! int count = 1; %>
+        <c:forEach items="${users}" var="user" begin="0" end="5">
+            <div>
+                <p>${count}. ${user.getId()} - ${user.getName()}</p>
+                <% count = count + 1; %>
+            </div>
+        </c:forEach>
+    </div>
+    <div>
+        <button id="btn-reset">Reset BXH</button>
+        <button id="btn-play">Chơi mới</button>
+    </div>
+    <script type="text/javascript" src="js/chart.js"></script>
 </body>
 </html>
